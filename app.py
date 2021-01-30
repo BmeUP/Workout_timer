@@ -1,4 +1,9 @@
-import os
+from timer_object import Timer
 
-file = "/home/bme/Projects/workout_timer_github/Workout_timer/assets/alarm.wav"
-os.system("parole" + file)
+timer = Timer()
+
+if __name__ == '__main__':
+    timer.get_rounds()
+    timer.get_time()
+    timer.get_recreation_time()
+    timer.alarm()
